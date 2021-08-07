@@ -53,6 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                       color: Colors.cyan[300],
                       size: 40,
                     ),
+                    suffixIcon: Icon(Icons.hide_source_outlined),
                     hintStyle:TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -86,21 +87,30 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   )
               ),
-              RaisedButton(
-                  onPressed: (){
-                    Navigator.pushNamed(context, '/signup');
-                  },
-                  color: Colors.cyan,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Dont Have An Account   ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.pushNamed(context, '/signup');
+                    },
                     child: Text(
-                      '            SIGN UP            ',
+                      'SIGN UP',
+
                       style: TextStyle(
-                          fontSize: 20
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
                       ),
                     ),
-                  )
-              )
+                  ),
+                ],
+              ),
             ],
           ),
         ),
