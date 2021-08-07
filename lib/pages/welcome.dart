@@ -50,7 +50,7 @@ class WelcomeScreen extends StatelessWidget {
             SizedBox(height: 20 ,),
             FlatButton.icon(
                 onPressed:(){
-                  Navigator.pushNamed(context, '/login');
+                  Navigator.pushReplacementNamed(context, '/login');
                 },
                 icon: Icon(
                     Icons.arrow_forward_sharp,

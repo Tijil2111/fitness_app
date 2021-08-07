@@ -8,7 +8,7 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.cyanAccent,
         elevation: 0,
         title: Padding(
           padding: const EdgeInsets.only(left: 40),
@@ -83,8 +83,10 @@ class SignUpPage extends StatelessWidget {
               children: [
                 IconButton(
                     onPressed: (){},
+                  highlightColor: Colors.cyanAccent,
                     icon: Icon(
                         Icons.male,
+
                       size: 40,
                     ),
                 ),
@@ -199,9 +201,9 @@ class SignUpPage extends StatelessWidget {
             SizedBox(height: 10,),
             RaisedButton(
                 onPressed: (){
-                  Navigator.pushNamed(context, '/home');
+                  Navigator.pushReplacementNamed(context, '/home');
                 },
-                color: Colors.cyan,
+                color: Colors.cyanAccent,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
