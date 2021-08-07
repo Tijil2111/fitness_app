@@ -49,13 +49,15 @@ class WelcomeScreen extends StatelessWidget {
             ),
             SizedBox(height: 20 ,),
             FlatButton.icon(
-                onPressed:(){},
+                onPressed:(){
+                  Navigator.pushNamed(context, '/login');
+                },
                 icon: Icon(
                     Icons.arrow_forward_sharp,
                   size: 70,
                 ),
                 label: Text(
-                    'Login Page',
+                    'Continue',
                   style: TextStyle(
                     fontSize:20
                   ),
