@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
                     hintText: 'Username',
                     prefixIcon: prefixIcon??Icon(
                         Icons.account_circle,
-                      color: Colors.cyanAccent,
+                      color: Colors.blue[900],
                       size: 40,
                     ),
                     hintStyle:TextStyle(
@@ -50,7 +50,7 @@ class _LoginPageState extends State<LoginPage> {
                     hintText: 'Password',
                     prefixIcon: prefixIcon??Icon(
                       Icons.lock,
-                      color: Colors.cyanAccent,
+                      color: Colors.blue[900],
                       size: 40,
                     ),
                     suffixIcon: Icon(Icons.hide_source_outlined),
@@ -76,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: (){
                     Navigator.pushReplacementNamed(context, '/home');
                   },
-                  color: Colors.cyanAccent,
+                  color: Colors.blue[900],
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(

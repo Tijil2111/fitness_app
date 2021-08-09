@@ -207,19 +207,25 @@ class HomeScreen extends StatelessWidget {
                     elevation: 2,
                   ),flex: 5,
                 ),
+               SizedBox(width: 20,),
                 Expanded(
-                  child: Card(
-                    child: ListTile(
-                      leading: CircleAvatar(
-                        backgroundImage: NetworkImage(
-                            'https://image.shutterstock.com/image-vector/open-book-vector-flat-icon-600w-1649645665.jpg'),
-                      radius: 25,
+                  child: GestureDetector(
+                    onTap: (){
+                      Navigator.pushReplacementNamed(context, '/analysis');
+                    },
+                    child: Card(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              'https://image.shutterstock.com/image-vector/open-book-vector-flat-icon-600w-1649645665.jpg'),
+                        radius: 25,
+                        ),
+                        title: Text('Report'),
+                        subtitle: Text(''),
                       ),
-                      title: Text('Report'),
-                      subtitle: Text(''),
-                    ),
-                    elevation: 2,
+                      elevation: 2,
 
+                    ),
                   ),flex: 5 ,
                 ),
               ],
@@ -240,6 +246,8 @@ class HomeScreen extends StatelessWidget {
                     elevation: 2,
                   ),flex: 5,
                 ),
+                SizedBox(width: 20,),
+
                 Expanded(
                   child: Card(
                     child: ListTile(
