@@ -5,7 +5,7 @@ import 'pages/myAnalysis.dart';
 import 'pages/login.dart';
 import 'pages/signuppage.dart';
 
-void main() => runApp(MaterialApp(initialRoute: '/home', routes: {
+void main() => runApp(MaterialApp(initialRoute: '/', routes: {
       '/': (context) => WelcomeScreen(),
       '/login': (context) => LoginPage(),
       '/signup': (context) => SignUpPage(),
