@@ -17,7 +17,7 @@ class SignUpPage extends StatelessWidget {
               Text(
                   'Registration',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                       fontSize: 30
                 ),
               ),
@@ -209,7 +209,8 @@ class SignUpPage extends StatelessWidget {
                   child: Text(
                     '              SIGN UP              ',
                     style: TextStyle(
-                        fontSize: 20
+                        fontSize: 20,
+                      color: Colors.white
                     ),
                   ),
                 )

@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 2.5,
+              height: 3,
             ),
 
             // Food card
@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 2.5,
+              height: 3,
             ),
 
             // Water card
@@ -130,7 +130,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 2.5,
+              height: 3,
             ),
 
             // Sleep card
@@ -150,7 +150,7 @@ class HomeScreen extends StatelessWidget {
             ),
 
             SizedBox(
-              height: 2.5,
+              height: 3,
             ),
             //Mind card
             Card(
@@ -170,7 +170,7 @@ class HomeScreen extends StatelessWidget {
             ),
 
             SizedBox(
-              height: 2.5,
+              height: 3,
             ),
             // Activity Card
             Card(
@@ -230,6 +230,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+            SizedBox(height: 10,),
             Row(
               children: [
                 Expanded(

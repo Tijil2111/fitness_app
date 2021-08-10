@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
                     prefixIcon: prefixIcon??Icon(
                         Icons.account_circle,
                       color: Colors.blue[900],
-                      size: 40,
+                      size: 30,
                     ),
                     hintStyle:TextStyle(
                       fontSize: 20,
@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                     prefixIcon: prefixIcon??Icon(
                       Icons.lock,
                       color: Colors.blue[900],
-                      size: 40,
+                      size: 30,
                     ),
                     suffixIcon: Icon(Icons.hide_source_outlined),
                     hintStyle:TextStyle(
@@ -82,6 +82,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(
                       '              Login               ',
                       style: TextStyle(
+                        color: Colors.white,
                         fontSize: 20
                       ),
                     ),
